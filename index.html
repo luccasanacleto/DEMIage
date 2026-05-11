@@ -362,7 +362,8 @@
 
         let valor = d6();
 
-        while (valor === 1) {
+        // rerrola 1 apenas UMA vez
+        if (valor === 1) {
 
           rolagens.push(1);
 
@@ -373,6 +374,7 @@
 
         total += valor;
 
+        // 6 continua explodindo infinitamente
         if (valor === 6) {
 
           explosao();
@@ -395,7 +397,8 @@
 
       let valor = d6();
 
-      while (valor === 1) {
+      // rerrola 1 apenas UMA vez
+      if (valor === 1) {
 
         rolagens.push(1);
 
