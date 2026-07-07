@@ -464,11 +464,11 @@
         return;
       }
 
-      // 4d6 por motosserra
-      let dadosPrincipais = motosserras * 4;
+      // 3d6 por motosserra
+      let dadosPrincipais = motosserras * 3;
 
-      // crítico dobra apenas principal
-      dadosPrincipais += criticos * 4;
+      // cada crítico adiciona +3d6 (totalizando 6d6 naquela motosserra)
+      dadosPrincipais += criticos * 3;
 
       // 2d6 bônus por motosserra
       let dadosBonus = motosserras * 2;
